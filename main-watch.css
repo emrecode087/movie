@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+}
+
+#panel {
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    padding: 10px;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#logo-yazi {
+    color: #f2f2f2;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ana_cerceve {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+.a {
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f2f2f2;
+    padding: 0 20px;
+    border-right: 1px dotted #f2f2f2;
+}
+
+.a:last-child {
+    border-right: none;
+}
+
+.icerik {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.video {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.message {
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    color: #f2f2f2;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    color: #fcd203;
+    margin-right: 10px;
+}
+
+.rating label:before {
+    content: "\2606";
+    font-size: 24px;
+}
+
+.rating input[type="radio"]:checked ~ label:before {
+    content: "\2605";
+}
+
+.submit {
+    margin-top: 10px;
+    background-color: #33333300;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .ana_cerceve {
+        padding: 10px;
+    }
+    
+    .menu {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .a {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px dotted #f2f2f2;
+    }
+    
+    .a:last-child {
+        border-bottom: none;
+    }
+    
+    .icerik {
+        flex-direction: column;
+    }
+    
+    .video {
+        margin-right: 0;
+    }
+    
+}
+.placeholder {
+color: gray;
+}
+.textbox {
+border: 1px solid black;
+padding: 5px;
+font-size: 16px;
+}
+  
